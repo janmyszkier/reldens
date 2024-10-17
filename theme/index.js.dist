@@ -58,7 +58,7 @@ console.log('TEST - ServerPlugin starting...');
 appServer.createServers().then(() => {
     console.log('TEST - CREATED APP SERVER INSTANCE!');
     appServer.start().then(() => {
-        console.log('TEST - SERVER UP AND RUNNING!');
+        console.log('TEST - SERVER UP AND RUNNING on ' + appServer.configServer.publicUrl + '!');
     }).catch((err) => {
         console.log('TEST - ServerPlugin error:', err);
         process.exit();
